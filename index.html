@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=1280 height=800></canvas>
+      <canvas id="unity-canvas" width=1680 height=1050></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -56,11 +56,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/1.9.loader.js";
+      var loaderUrl = buildUrl + "/3.1.loader.js";
       var config = {
-        dataUrl: buildUrl + "/1.9.data",
-        frameworkUrl: buildUrl + "/1.9.framework.js",
-        codeUrl: buildUrl + "/1.9.wasm",
+        dataUrl: buildUrl + "/3.1.data",
+        frameworkUrl: buildUrl + "/3.1.framework.js",
+        codeUrl: buildUrl + "/3.1.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "proyecto-fhg2",
@@ -93,8 +93,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "1280px";
-        canvas.style.height = "800px";
+        //canvas.style.width = "1680px";
+        //canvas.style.height = "1050px";
       }
 
       loadingBar.style.display = "block";
